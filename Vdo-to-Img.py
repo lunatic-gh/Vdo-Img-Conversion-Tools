@@ -243,7 +243,6 @@ root.title("Vdo & Img Tools")
 root.resizable(width=False, height=False)
 root.columnconfigure((0,1),weight=1)
 root.rowconfigure((0,1,2,3,4),weight=1)
-root.wm_iconbitmap("Programicon.ico")
 root.bind('<Escape>', lambda e: stop_process())
 
 file = ""
