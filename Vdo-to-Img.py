@@ -97,7 +97,7 @@ def convert():
             ret, frame = cam.read()
             if ret:
                 N = 4
-                name = os.path.join(folder, 'Frame-' + (str(currentframe)).zfill(6) +"."+ targetformat)
+                name = os.path.join(folder, str(currentframe) +"."+ targetformat)
                 cv2.imwrite(name, frame)
                 currentframe += 1
                 progressbar.set(currentframe/total_frames)
